@@ -17,13 +17,13 @@ export default function Leaderboard(props){
     )
     return(
         <table className="leaderboard">
-            <caption>Leaderboard</caption>
+            <caption>Leaderboard (Top 10)</caption>
             <tr>
                 <th>Rank</th>
                 <th>Name</th>
                 <th>Score</th>
             </tr>
-            {leaderboardItems}
+            {leaderboardItems.length >10 ? leaderboardItems.slice(0,10) : leaderboardItems}
         </table>
     )
 }
