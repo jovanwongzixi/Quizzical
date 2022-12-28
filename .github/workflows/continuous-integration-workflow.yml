@@ -17,7 +17,6 @@ jobs:
         env:
           FIREBASE_CONFIG: ${{secrets.KEYS}}
         run: npm run build
-      - run: npm test
       - name: Deploy Github Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
