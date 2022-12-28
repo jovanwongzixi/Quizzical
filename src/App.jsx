@@ -3,10 +3,11 @@ import {initializeApp} from "firebase/app"
 import { getFirestore, setDoc, getDoc, doc } from "firebase/firestore";
 import Homepage from "./Homepage";
 import Quiz from "./Quiz";
-//import firebaseConfig from "./firebaseConfig";
+import firebaseConfig from "./firebaseConfig";
 
-const db = getFirestore(initializeApp(JSON.parse(process.env.FIREBASE_CONFIG)||firebaseConfig))
-//const querySnapshot = await getDoc(doc(db,"leaderboard","jIF4HvapctiqSYb0DJuA"))
+
+const db = getFirestore(initializeApp(firebaseConfig))
+//const querySnapshot = await getDoc(doc(db,"leaderboard","jIF4HvapctiqSYb0DJuA"))JSON.parse(process.env.FIREBASE_CONFIG)||
 
 export default function App(){
     const [quizStarted, setQuizStarted] = useState(false)
