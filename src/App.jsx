@@ -5,7 +5,7 @@ import Homepage from "./Homepage";
 import Quiz from "./Quiz";
 import firebaseConfig from "./firebaseConfig";
 
-const db = getFirestore(initializeApp(firebaseConfig))
+const db = getFirestore(initializeApp(JSON.parse(process.env.FIREBASE_CONFIG)||firebaseConfig))
 //const querySnapshot = await getDoc(doc(db,"leaderboard","jIF4HvapctiqSYb0DJuA"))
 
 export default function App(){
