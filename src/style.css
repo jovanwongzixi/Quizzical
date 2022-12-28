@@ -7,7 +7,7 @@ body {
     font-family: 'Karla', sans-serif;
     color: #293264;
     height: 100%;
-    background-image: url(".\top-right.svg"), url(".\bottom-left.svg");
+    background-image: url("./top-right.svg"), url("./bottom-left.svg");
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed, fixed;
     background-position: top right, bottom left;
