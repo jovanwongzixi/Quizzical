@@ -13,7 +13,10 @@ jobs:
         with:
           node-version: "19.x"
       - run: npm install
-      - run: npm run build
+      - name: Build
+        env:
+          FIREBASE_CONFIG: ${{secrets.KEYS}}
+        run: npm run build
       - run: npm test
       - name: Deploy Github Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
