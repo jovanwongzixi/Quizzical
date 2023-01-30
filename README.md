@@ -5,7 +5,10 @@ Final solo project from Scrimba's learn react course with added leaderboard and 
 
 Url to website: https://jovanwongzixi.github.io/Quizzical/
 
+Leaderboard retrieved and updated through RESTful APIs
+
+Url to Quizzical-leaderboard repository: https://github.com/jovanwongzixi/Quizzical-leaderboard
+
 ### Tech Stack
 - HTML/CSS
 - ReactJS
-- Google Firestore database to store leaderboard data
